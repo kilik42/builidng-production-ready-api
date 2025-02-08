@@ -22,7 +22,7 @@ userRouter.get('/users/:id', (req, res) => {
     );
 });
 
-userRouter.get('/users/:id/edit', (req, res) => {
+userRouter.get('/users/:id', (req, res) => {
     
     res.send(
         
@@ -55,5 +55,15 @@ userRouter.put('/users/:id', (req, res) => {
 
 });
 
+userRouter.delete('/users/:id', (req, res) => {
+    res.send(
+        
+        {title: 'Delete User'}
+    
+    
+    );      
+
+}
+);
 
 export default userRouter;
